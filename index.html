@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موسوعة أدوات مايكروسوفت أوفيس الشاملة</title>
+    <style>
+        /* إعدادات التصميم الأساسية للشريط العائم */
+        :root {
+            --nav-bg: #2c3e50;
+            --nav-hover: #3498db;
+            --primary-color: #1a73e8;
+            --bg-body: #f4f7f6;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-body);
+        }
+
+        /* الشريط العلوي العائم */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            background-color: var(--nav-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .navbar button {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .navbar button:hover, .navbar button.active {
+            background-color: var(--nav-hover);
+        }
+
+        /* حاويات المحتوى */
+        .content-section {
+            display: none; /* إخفاء الكل افتراضياً */
+            margin-top: 80px; /* مساحة للشريط العلوي */
+            padding: 10px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .content-section.active {
+            display: block; /* إظهار القسم النشط فقط */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* دمج تنسيقات الجداول والكروت من ملفاتك الأصلية لضمان المظهر الصحيح */
+        iframe { width: 100%; height: 500px; border: none; }
+        .card { background: white; border-radius: 8px; padding: 10px; margin-bottom: 20px; box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+        code, pre { direction: ltr; text-align: left; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <button onclick="showSection('links')" id="btn-links" class="active">روابط التحميل الرسمية</button>
+        <button onclick="showSection('ohook')" id="btn-ohook">التفعيل آليا او يدويا</button>
+        <button onclick="showSection('odts')" id="btn-odts">تثبيت نسخة مخففة</button>
+        <button onclick="showSection('odt')" id="btn-odt">تثبيت بدون انترنت</button>
+        <button onclick="showSection('ods')" id="btn-ods">ايميلات مجانية للتفعيل</button>
+
+    </nav>
+
+    <div id="links" class="content-section active">
+        <div class="card">
+             
+            <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>دليل روابط تحميل مايكروسوفت أوفيس الكامل [ar-SA]</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f7f6; margin: 0; padding: 10px; color: #333; }
+        .container { max-width: 1250px; margin: auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #8b3278; border-bottom: 3px solid #8b3278; padding-bottom: 15px; margin-top: 0; }
+        
+        /* أزرار رأس الجدول (القائمة التفاعلية) */
+        .tabs-container { display: flex; flex-wrap: wrap; gap: 10px; background: #8b3278; padding: 15px; border-radius: 10px; margin-bottom: 25px; justify-content: center; }
+        .tab-btn { padding: 12px 25px; border: none; background: #a43b8d; color: white; cursor: pointer; font-weight: bold; border-radius: 8px; transition: all 0.3s ease; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .tab-btn:hover { background: #6d265e; transform: translateY(-2px); }
+        .tab-btn.active { background: white; color: #8b3278; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+
+        /* الجدول والبيانات */
+        .table-responsive { overflow-x: auto; border-radius: 8px; border: 1px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; background: white; min-width: 800px; }
+        th { background-color: #f8f9fa; color: #1c1e21; padding: 10px; font-weight: bold; border-bottom: 2px solid #ddd; font-size: 14px; text-transform: uppercase; }
+        td { padding: 12px 15px; border-bottom: 1px solid #eee; text-align: center; font-size: 14px; vertical-align: middle; }
+        tr:last-child td { border-bottom: none; }
+        tr:hover { background-color: #f9f9f9; }
+
+        .product-id { font-weight: bold; color: #000; }
+        .apps-list { font-size: 12px; color: #000; max-width: 300px; margin: auto; line-height: 1.5; }
+        
+        /* الروابط */
+        .link-action { display: inline-block; padding: 0px 10px; color: #a43b8d; text-decoration: none; border: 1px solid #a43b8d; border-radius: 5px; font-weight: 600; transition: 0.2s; background: #fff; }
+        .link-action:hover { background: #a43b8d; color: #fff; }
+        .na-val { color: #ccc; font-style: italic; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+<div >
+    <h1>مركز تحميل حزم Office المباشرة</h1>
+    
+    <div class="tabs-container" id="tabsHeader"></div>
+
+    <div class="table-responsive">
+        <table id="linksTable">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Included Apps</th>
+                    <th>Online x64</th>
+                    <th>Online x32</th>
+                    <th>Offline x32-x64</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    // قاعدة البيانات كاملة مستخرجة من ملف officelinks.html
+    const officeDatabase = {
+        "Microsoft 365": [
+            { id: "O365ProPlusRetail❤️", apps: "Access, Excel, Lync, OneNote, Outlook, PowerPoint, Publisher,	Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/O365ProPlusRetail.img" }, 
+	{ id: "O365AppsBasicRetail", apps: "Excel, OneNote, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365AppsBasicRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365AppsBasicRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "O365BusinessRetail", apps: "Access, Excel, Lync, OneNote, Outlook, PowerPoint, Publisher, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365BusinessRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365BusinessRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/O365BusinessRetail.img" }, 
+	{ id: "O365EduCloudRetail", apps: "Excel, OneNote, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365EduCloudRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365EduCloudRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "O365HomePremRetail", apps: "Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word, OneDrive" , x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365HomePremRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365HomePremRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/O365HomePremRetail.img" }, 
+	{ id: "O365SmallBusPremRetail", apps: "Access, Excel, Lync, OneNote, Outlook, PowerPoint, Publisher, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365SmallBusPremRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365SmallBusPremRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "ProjectProRetail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectProRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectProRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "VisioProRetail", apps: "Visio, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioProRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioProRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" }
+        ],
+        "Office 2024": [
+            	{ id: "Access2024Retail", apps: "Access", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Access2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Access2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Access2024Retail.img" }, 
+
+	{ id: "Excel2024Retail", apps: "Excel, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Excel2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Excel2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Excel2024Retail.img" }, 
+
+	{ id: "Home2024Retail", apps: "Excel, OneNote, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Home2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Home2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Home2024Retail.img" }, 
+
+	{ id: "HomeBusiness2024Retail", apps: "Excel, OneNote, Outlook, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusiness2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusiness2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/HomeBusiness2024Retail.img" }, 
+
+	{ id: "Outlook2024Retail", apps: "Outlook" , x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Outlook2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Outlook2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Outlook2024Retail.img" }, 
+
+	{ id: "PowerPoint2024Retail", apps: "PowerPoint, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PowerPoint2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PowerPoint2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/PowerPoint2024Retail.img" }, 
+
+	{ id: "ProjectPro2024Retail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectPro2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectPro2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProjectPro2024Retail.img" }, 
+
+	{ id: "ProjectStd2024Retail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStd2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStd2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProjectStd2024Retail.img" }, 
+
+	{ id: "ProPlus2024Retail", apps: "Access, Excel, OneNote, Outlook, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProPlus2024Retail.img" }, 
+
+	{ id: "VisioPro2024Retail", apps: "Visio, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioPro2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioPro2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/VisioPro2024Retail.img" }, 
+
+	{ id: "VisioStd2024Retail", apps: "Visio, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioStd2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioStd2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/VisioStd2024Retail.img" }, 
+
+	{ id: "Word2024Retail", apps: "Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Word2024Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Word2024Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Word2024Retail.img" }
+        ],
+        "Office 2021": [
+	{ id: "Access2021Retail", apps: "Access", x64: 	"https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Access2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Access2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Access2021Retail.img" }, 
+
+	{ id: "Excel2021Retail", apps: "Excel, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Excel2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Excel2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Excel2021Retail.img" }, 
+
+	{ id: "HomeBusiness2021Retail", apps: "Excel, OneNote, Outlook, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusiness2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusiness2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/HomeBusiness2021Retail.img" }, 
+
+	{ id: "HomeStudent2021Retail", apps: "Excel, OneNote, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeStudent2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeStudent2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/HomeStudent2021Retail.img" }, 
+
+	{ id: "OneNote2021Retail", apps: "OneNote", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OneNote2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OneNote2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "Outlook2021Retail", apps: "Outlook", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Outlook2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Outlook2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Outlook2021Retail.img" }, 
+
+	{ id: "Personal2021Retail", apps: "Excel, Outlook, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Personal2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Personal2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "PowerPoint2021Retail", apps: "PowerPoint, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PowerPoint2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PowerPoint2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/PowerPoint2021Retail.img" }, 
+
+	{ id: "Professional2021Retail", apps: "Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word,				OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Professional2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Professional2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Professional2021Retail.img" }, 
+
+	{ id: "ProjectPro2021Retail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectPro2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectPro2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProjectPro2021Retail.img" }, 
+
+	{ id: "ProjectStd2021Retail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStd2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStd2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProjectStd2021Retail.img" }, 
+
+	{ id: "ProPlus2021Retail", apps: "Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProPlus2021Retail.img" }, 
+
+	{ id: "Publisher2021Retail", apps: "Publisher, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Publisher2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Publisher2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: 	"https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Publisher2021Retail.img" }, 
+
+	{ id: "SkypeforBusiness2021Retail", apps: "Lync, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeforBusiness2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeforBusiness2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "Standard2021Retail", apps: "Excel, OneNote, Outlook, PowerPoint, Publisher, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Standard2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Standard2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "VisioPro2021Retail", apps: "Visio, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioPro2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioPro2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/VisioPro2021Retail.img" }, 
+
+	{ id: "VisioStd2021Retail", apps: "Visio, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioStd2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioStd2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/VisioStd2021Retail.img" }, 
+
+	{ id: "Word2021Retail", apps: "Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Word2021Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Word2021Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Word2021Retail.img" }
+        ],
+        
+        "Office 2019": [
+            	{ id: "Access2019Retail", apps: "Access" , x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Access2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Access2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Access2019Retail.img" }, 
+
+	{ id: "AccessRuntime2019Retail", apps: "Access" , x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=AccessRuntime2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=AccessRuntime2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "Excel2019Retail", apps: "Excel, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Excel2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Excel2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Excel2019Retail.img" }, 
+
+	{ id: "HomeBusiness2019Retail", apps: "Excel, OneNote, Outlook, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusiness2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusiness2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/HomeBusiness2019Retail.img" }, 
+
+	{ id: "HomeStudent2019Retail", apps: "Excel, OneNote, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeStudent2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeStudent2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/HomeStudent2019Retail.img" }, 
+
+	{ id: "Outlook2019Retail", apps: "Outlook", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Outlook2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Outlook2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Outlook2019Retail.img" }, 
+
+	{ id: "Personal2019Retail", apps: "Excel, Outlook, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Personal2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Personal2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "PowerPoint2019Retail", apps: "PowerPoint, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PowerPoint2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PowerPoint2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/PowerPoint2019Retail.img" }, 
+
+	{ id: "Professional2019Retail", apps: "Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Professional2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Professional2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline:  "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Professional2019Retail.img" }, 
+
+	{ id: "ProjectPro2019Retail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectPro2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectPro2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline:  "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProjectPro2019Retail.img" }, 
+
+	{ id: "ProjectStd2019Retail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStd2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStd2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline:  "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProjectStd2019Retail.img" }, 
+
+	{ id: "ProPlus2019Retail", apps: "Access, Excel, Lync, OneNote, Outlook, PowerPoint, Publisher,				Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlus2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline:  "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProPlus2019Retail.img" }, 
+
+	{ id: "Publisher2019Retail", apps: "Publisher, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Publisher2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Publisher2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline:  "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Publisher2019Retail.img" }, 
+
+	{ id: "SkypeforBusiness2019Retail", apps: "Lync, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeforBusiness2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeforBusiness2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "SkypeforBusinessEntry2019Retail", apps: "Lync, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeforBusinessEntry2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeforBusinessEntry2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "Standard2019Retail", apps: "Excel, OneNote, Outlook, PowerPoint, Publisher, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Standard2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Standard2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "VisioPro2019Retail", apps: "Visio, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioPro2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioPro2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline:  "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/VisioPro2019Retail.img" }, 
+
+	{ id: "VisioStd2019Retail", apps: "Visio, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioStd2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioStd2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline:  "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/VisioStd2019Retail.img" }, 
+
+	{ id: "Word2019Retail", apps: "Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Word2019Retail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=Word2019Retail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/Word2019Retail.img" }
+        ],
+        
+        "Office 2016": [
+             	{ id: "AccessRetail", apps: "Access", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=AccessRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=AccessRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/AccessRetail.img" }, 
+
+	{ id: "AccessRuntimeRetail", apps: "Access", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=AccessRuntimeRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=AccessRuntimeRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "ExcelRetail", apps: "Excel, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ExcelRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ExcelRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ExcelRetail.img" }, 
+
+	{ id: "HomeBusinessPipcRetail", apps: "Excel, OneNote, Outlook, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusinessPipcRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusinessPipcRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "HomeBusinessRetail", apps: "Excel, OneNote, Outlook, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusinessRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusinessRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/HomeBusinessRetail.img" }, 
+
+	{ id: "HomeStudentRetail", apps: "Excel, OneNote, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeStudentRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeStudentRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/HomeStudentRetail.img" }, 
+
+	{ id: "HomeStudentVNextRetail", apps: "Excel, OneNote, PowerPoint, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeStudentVNextRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeStudentVNextRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "OneNoteFreeRetail", apps: "OneNote", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OneNoteFreeRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OneNoteFreeRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "OneNoteRetail", apps: "OneNote" , x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OneNoteRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OneNoteRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "OutlookRetail", apps: "Outlook", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OutlookRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OutlookRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/OutlookRetail.img" }, 
+
+	{ id: "PersonalPipcRetail", apps: "Excel, Outlook, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PersonalPipcRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PersonalPipcRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "PersonalRetail", apps: "Excel, Outlook, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PersonalRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PersonalRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "PowerPointRetail", apps: "PowerPoint, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PowerPointRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PowerPointRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/PowerPointRetail.img" }, 
+
+	{ id: "ProfessionalPipcRetail", apps: "Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word,				OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalPipcRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalPipcRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "ProfessionalRetail", apps: "Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word,				OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProfessionalRetail.img" }, 
+
+	{ id: "ProjectProRetail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectProRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectProRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProjectProRetail.img" }, 
+
+	{ id: "ProjectStdRetail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStdRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStdRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProjectStdRetail.img" }, 
+
+	{ id: "ProPlusRetail", apps: "Access, Excel, Lync, OneNote, Outlook, PowerPoint, Publisher,				Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlusRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlusRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/ProPlusRetail.img" }, 
+
+	{ id: "PublisherRetail", apps: "Publisher, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PublisherRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PublisherRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/PublisherRetail.img" }, 
+
+	{ id: "SkypeforBusinessEntryRetail", apps: "Lync, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeforBusinessEntryRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeforBusinessEntryRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "SkypeforBusinessRetail", apps: "Lync, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeforBusinessRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeforBusinessRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "SkypeServiceBypassRetail", apps: "Lync, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeServiceBypassRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SkypeServiceBypassRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "StandardRetail", apps: "Excel, OneNote, Outlook, PowerPoint, Publisher, Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=StandardRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=StandardRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA", offline: "" },
+	{ id: "VisioProRetail", apps: "Visio, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioProRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioProRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/VisioProRetail.img" }, 
+
+	{ id: "VisioStdRetail", apps: "Visio, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioStdRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioStdRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/VisioStdRetail.img" }, 
+
+	{ id: "WordRetail", apps: "Word, OneDrive", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=WordRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O16GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=WordRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O16GA" , offline: "https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/ar-sa/WordRetail.img" }
+        ],
+        
+        "Office 2013": [
+             { id: "AccessRetail", apps: "Access", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=AccessRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=AccessRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA" , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/AccessRetail.img" }, 
+
+	{ id: "ExcelRetail", apps: "Excel", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ExcelRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ExcelRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/ExcelRetail.img" }, 
+
+	{ id: "GrooveRetail", apps: "Groove", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=GrooveRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=GrooveRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "HomeBusinessPipcRetail", apps: "Excel, OneNote, Outlook, PowerPoint, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusinessPipcRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusinessPipcRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "HomeBusinessRetail", apps: "Excel, OneNote, Outlook, PowerPoint, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusinessRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeBusinessRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/HomeBusinessRetail.img" }, 
+
+	{ id: "HomeStudentRetail", apps: "Excel, OneNote, PowerPoint, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeStudentRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=HomeStudentRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/HomeStudentRetail.img" }, 
+
+	{ id: "InfoPathRetail", apps: "InfoPath", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=InfoPathRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=InfoPathRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "LyncAcademicRetail", apps: "Lync", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=LyncAcademicRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=LyncAcademicRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "LyncEntryRetail", apps: "Lync", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=LyncEntryRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=LyncEntryRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "LyncRetail", apps: "Lync", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=LyncRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=LyncRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "O365BusinessRetail", apps: "Excel, Groove, OneNote, Outlook, PowerPoint, Publisher, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365BusinessRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365BusinessRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "O365HomePremRetail", apps: "Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365HomePremRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365HomePremRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA" , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/O365HomePremRetail.img" }, 
+
+	{ id: "O365ProPlusRetail", apps: "Access, Excel, Groove, InfoPath, Lync, OneNote, Outlook,				PowerPoint, Publisher, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "O365SmallBusPremRetail", apps: "Access, Excel, Groove, InfoPath, Lync, OneNote, Outlook,				PowerPoint, Publisher, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365SmallBusPremRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365SmallBusPremRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "OneNoteFreeRetail", apps: "OneNote", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OneNoteFreeRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OneNoteFreeRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "OneNoteRetail", apps: "OneNote", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OneNoteRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OneNoteRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "OutlookRetail", apps: "Outlook", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OutlookRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA", x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=OutlookRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/OutlookRetail.img" }, 
+
+	{ id: "PersonalPipcRetail", apps: "Excel, Outlook, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PersonalPipcRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PersonalPipcRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "PersonalRetail", apps: "Excel, Outlook, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PersonalRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PersonalRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "PowerPointRetail", apps: "PowerPoint", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PowerPointRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PowerPointRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/PowerPointRetail.img" }, 
+
+	{ id: "ProfessionalPipcRetail", apps: "Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalPipcRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: 	"https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalPipcRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "ProfessionalRetail", apps: "Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProfessionalRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/ProfessionalRetail.img" }, 
+
+	{ id: "ProjectProRetail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectProRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectProRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/ProjectProRetail.img" }, 
+
+	{ id: "ProjectStdRetail", apps: "Project", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStdRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStdRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/ProjectStdRetail.img" }, 
+
+	{ id: "ProPlusRetail", apps: "Access, Excel, Groove, InfoPath, Lync, OneNote, Outlook,				PowerPoint, Publisher, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlusRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: 	"https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProPlusRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "PublisherRetail", apps: "Publisher", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PublisherRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA", x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=PublisherRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/PublisherRetail.img" }, 
+
+	{ id: "SPDRetail", apps: "SharePointDesigner", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SPDRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=SPDRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "StandardRetail", apps: "Excel, Groove, OneNote, Outlook, PowerPoint, Publisher, Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=StandardRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=StandardRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA", offline: "" },
+	{ id: "VisioProRetail", apps: "Visio", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioProRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioProRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/VisioProRetail.img" }, 
+
+	{ id: "VisioStdRetail", apps: "Visio", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioStdRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA" , x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=VisioStdRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA"  , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/VisioStdRetail.img" }, 
+
+	{ id: "WordRetail", apps: "Word", x64: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=WordRetail&amp;platform=x64&amp;language=ar-sa&amp;version=O15GA", x32: "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=WordRetail&amp;platform=x86&amp;language=ar-sa&amp;version=O15GA" , offline: "https://officecdn.microsoft.com/db/39168d7e-077b-48e7-872c-b232c3e72675/media/ar-sa/WordRetail.img" }
+        ]
+    };
+
+    function initialize() {
+        const header = document.getElementById('tabsHeader');
+        const keys = Object.keys(officeDatabase);
+
+        keys.forEach((category, index) => {
+            const btn = document.createElement('button');
+            btn.className = 'tab-btn' + (index === 0 ? ' active' : '');
+            btn.innerText = category;
+            btn.onclick = (e) => switchCategory(category, e.target);
+            header.appendChild(btn);
+        });
+
+        // تشغيل أول قسم عند التحميل
+        switchCategory(keys[0], header.firstChild);
+    }
+
+    function switchCategory(catName, btnElement) {
+        const tbody = document.getElementById('tableBody');
+        tbody.innerHTML = ''; // تنظيف الجدول
+
+        const dataSet = officeDatabase[catName];
+        dataSet.forEach(item => {
+            const row = `<tr>
+                <td><span class="product-id">${item.id}</span></td>
+                <td><div class="apps-list">${item.apps}</div></td>
+                <td>${generateLink(item.x64)}</td>
+                <td>${generateLink(item.x32)}</td>
+                <td>${generateLink(item.offline)}</td>
+            </tr>`;
+            tbody.innerHTML += row;
+        });
+
+        // تحديث شكل الأزرار
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btnElement.classList.add('active');
+    }
+
+    function generateLink(url) {
+        if (!url || url === "" || url === "NA") return '<span class="na-val">N/A</span>';
+        return `<a href="${url}" class="link-action" target="_blank">رابط</a>`;
+    }
+
+    window.onload = initialize;
+</script>
+
+</body>
+</html>
+            </div>
+    </div>
+
+    <div id="odt" class="content-section">
+        <div class="card">
+            <h2 style="color: #d83b01;">دليل تثبيت Office 365 عبر ODT</h2>
+            <p>تنزيل حزمة Office 365 باستخدام أداة ODT للتثبيت بدون انترنت لاحقا (لمزيد من التخصيص والتحكم).</p>
+            <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل تثبيت Office 365 عبر ODT</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f9; padding: 20px; }
+        .container { max-width: 900px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #d83b01; border-bottom: 2px solid #d83b01; padding-bottom: 10px; }
+        h2 { color: #2b579a; margin-top: 25px; }
+        .feature-box { background: #e7f3ff; border-right: 5px solid #2b579a; padding: 15px; margin: 20px 0; }
+        code { background: #eee; padding: 2px 5px; border-radius: 4px; font-family: Consolas, monospace; color: #c7254e; }
+        pre { background: #2d2d2d; color: #ccc; padding: 20px; overflow-x: auto; border-radius: 5px; position: relative; }
+        .step { margin-bottom: 20px; }
+        .important { color: #d9534f; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div >
+
+    <div class="feature-box">
+        <h2>لماذا نستخدم أداة ODT؟</h2>
+        <ul>
+            <li><strong>التثبيت دون إنترنت:</strong> تنزيل الملفات مرة واحدة وتثبيتها على عدة أجهزة.</li>
+            <li><strong>توفير مساحة النظام:</strong> إمكانية حفظ الملفات في القرص <code>D:</code> أو <code>E:</code> بدلاً من <code>C:</code>.</li>
+            <li><strong>المرونة العالية:</strong> اختيار إصدارات معينة (2016, 2019, 2021, O365, 2024) أو تطبيقات فردية (Word فقط مثلاً) من اصدار معين.</li>
+            <li><strong>تعدد اللغات:</strong>إمكانية تحديد لغة بعينها للتثبيت (العربية مثلاً) او دمج عدة لغات.</li>
+            <li><strong>تعدد قنوات التحديثات:</strong>اختيار قناة التحديثات الحالية، او الشهرية (مستقرة) او النصف سنوية (الاكثر استقرارا) او تنزيل الملفات من كل القنوات حسب الرغبة.</li>
+            <li><strong>تعدد بيئات التشغيل:</strong>تحديد النسخة 64 بت او 32 بت او الدمج بينهما.</li>        
+</ul>
+    </div>
+    <div class="feature-box">
+        <h2>لماذا نستخدم حزمة Office 365؟</h2>
+        <ul>
+            <li><strong>الميزات المتوفرة:</strong>يتوفر بها كل الامكانيات التي تتيحها مايكروسوفت في الاوفيس واهمها المحرر والاملاء الصوتي.</li>
+            <li><strong>توفير المساحة:</strong>إمكانية تثبيت معظم الاصدارات والحزم الاخرى منها والتبديل بينها بكل سهولة بدلاً من تنزيل ملفات جديدة.</li> 
+</ul>
+    </div>
+
+    <h2>الخطوات العملية</h2>
+
+    <div class="step">
+        <h3>1. تحميل الأداة</h3>
+        <p>قم بتحميل أداة <strong>Office Deployment Tool</strong> من موقع مايكروسوفت الرسمي (<a href="https://officecdn.microsoft.com/pr/wsus/setup.exe" target="_blank">للتنزيل اضغط هنا</a>)، ثم قم بنقلها الى مجلد على القرص الصلب (مثلاً: <code>D:\OfficeSetup</code>).</p>
+    </div>
+
+    <div class="step">
+        <h3>2. إنشاء ملف التكوين (O365-ar-x64.xml)</h3>
+        <p>هذا الملف هو المحرك الأساسي ليقوم بالتنزيل. انسخ الكود التالي والصقه في ملف نصى ثم احفظه باسم (O365-ar-x64.xml) داخل المجلد (D:\OfficeSetup)</p>
+        <pre dir="ltr">
+&lt;Configuration&gt;
+  &lt;Add OfficeClientEdition="64" &gt;
+    &lt;Product ID="O365ProPlusRetail"&gt;
+      &lt;Language ID="ar-sa" /&gt;
+    &lt;/Product&gt;
+  &lt;/Add&gt;
+  &lt;RemoveMSI /&gt;
+&lt;/Configuration&gt;
+        </pre>
+    </div>
+<p>الغرض من هذه الاعدادات داخل هذا الملف هو تنزيل النسخة العربية من الحزمة الكاملة للأوفيس 365 من القناة الحالية للتحديثات.  </p>
+
+    <div class="step">
+        <h3>3. بدء عملية التنزيل (Download)</h3>
+        <p>افتح موجه الأوامر (CMD) كمسؤول، وانتقل لمجلد الأداة، بالأمر التالي:</p>
+<pre dir="ltr">Cd /d D:\OfficeSetup</pre>        
+        <p>ثم اكتب الأمر التالي:</p>
+<pre dir="ltr">setup.exe /download O365-ar-x64.xml</pre>
+        <p class="important">سيتم إنشاء مجلد باسم "Office" داخل المسار المحدد في القرص D وبعد انتهاء التنزيل سيحتوى هذا المجلد على كافة ملفات التثبيت.</p>
+<p class="important">يتم التنزيل فى الخلفية والامر يستغرق وقتا يتناسب مع سرعة اتصالك بالانترنت فلا تغلق الجهاز قبل انتقال سطر الاوامر فى موجه الاوامر الى سطر جديد.</p>
+    </div>
+
+    <div class="step">
+        <h3>4. التثبيت في أي وقت (Install)</h3>
+        <p>عند الرغبة في التثبيت (حتى بدون إنترنت)، افتح موجه الأوامر (CMD) كمسؤول، وانتقل لمجلد الأداة باستخدام لأمر التالي</p>
+<pre dir="ltr">Cd /d D:\OfficeSetup</pre>        
+<p>ثم استخدم الأمر التالي:</p>
+<pre dir="ltr">setup.exe /configure O365-ar-x64.xml</pre>
+<p class="important">يتم التثبيت فى الخلفية والامر يستغرق بعض الوقت.</p>
+    </div>
+    <div class="step">
+        <h3>5. مثال لتثبيت اصدار اخر من نفس الملفات في أي وقت</h3>
+ <p>قمت بتجهيز ملف اعدادات ليقوم بتثبيت اوفيس 2016 وحفظته باسم (O2016-ar-x64.xml) داخل المجلد (D:\OfficeSetup)</p>
+        <pre dir="ltr">
+&lt;Configuration&gt;
+  &lt;Add OfficeClientEdition="64" &gt;
+    &lt;Product ID="ProPlusRetail"&gt;
+      &lt;Language ID="ar-sa" /&gt;
+    &lt;/Product&gt;
+  &lt;/Add&gt;
+  &lt;RemoveMSI /&gt;
+&lt;/Configuration&gt;
+        </pre>
+        <p>ثم استخدمت الأمرين التاليين للانتقال للمجلد الخاص بملفات التثبيت ثم للتثبيت من ملف الاعدادات الجديد (O2016-ar-x64.xml):</p>
+<pre dir="ltr">Cd /d D:\OfficeSetup</pre>        
+<pre dir="ltr">setup.exe /configure O2016-ar-x64.xml</pre>
+<p>النتيجة كانت تثبيت النسخة العربية من الحزمة الكاملة للأوفيس 2016 باستخدام نفس الملفات وبدون أي تنزيل من الانترنت. </p>
+    </div>
+
+    <h2>نصيحة للتخصيص</h2>
+    <p>للحصول على كود XML جاهز بدقة عالية لكل الإصدارات (2019، 2021، 2024)، يفضل استخدام موقع <a href="https://config.office.com/deploymentsettings" target="_blank">Office Customization Tool</a> الرسمي، ثم تصدير الملف واستبداله بملف <code>Configuration.xml</code> الخاص بك واستبدل اسم الملف في الامر الاخير كما يمكنك حفظ أكثر من ملف تعرف بإعدادات مختلفة ويكفي تغيير اسم ملف الاعدادات في امر التثبيت فقط واليك احد الملفات التى استخدمها كثيرا:</p>
+<pre dir="ltr">&lt;Configuration&gt;
+  &lt;Add OfficeClientEdition="64" Channel="SemiAnnual"&gt;
+    &lt;Product ID="O365ProPlusRetail"&gt;
+      &lt;Language ID="ar-sa" /&gt;
+      &lt;ExcludeApp ID="Groove" /&gt;
+      &lt;ExcludeApp ID="Lync" /&gt;
+      &lt;ExcludeApp ID="OneDrive" /&gt;
+      &lt;ExcludeApp ID="OneNote" /&gt;
+      &lt;ExcludeApp ID="Outlook" /&gt;
+      &lt;ExcludeApp ID="Bing" /&gt;
+      &lt;ExcludeApp ID="OutlookForWindows" /&gt;
+    &lt;/Product&gt;
+  &lt;/Add&gt;
+  &lt;Updates Enabled="TRUE" /&gt;
+  &lt;RemoveMSI /&gt;
+  &lt;Display Level="Full" AcceptEULA="TRUE" /&gt;
+&lt;/Configuration&gt;</pre>
+<p class="important">فى هذه الاعدادات استبدلت قناة التحديثات بالقناة النصف سنوية لمزيد من الاستقرار كما منعت تثبيت معظم التطبيقات التى لا احتاجها وسيتم حذف الاصدارات القديمة حال وجودها وستظهر مراحل التثبيت ولن تعمل فى الخلفية وفعلنا التحديثات المستقبلية واخفينا شاشة قبول الترخيص التى ستظهر عند فتح التطبيقات بعد الانتهاء من التثبيت.</p>
+</div>
+
+</body>
+</html>
+            </div>
+    </div>
+
+    <div id="odts" class="content-section">
+        <div class="card">
+            <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل تثبيت Microsoft 365</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #3c4043;
+            --code-bg: #202124;
+            --code-text: #e8eaed;
+            --success-color: #34a853;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+            border: 1px solid #dadce0;
+        }
+
+        h1 { color: var(--primary-color); margin-bottom: 10px; }
+        h2 { border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; font-size: 1.4rem; display: flex; align-items: center; }
+
+        .step-number {
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 12px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .code-container {
+            position: relative;
+            margin-top: 15px;
+        }
+
+        pre {
+            background: var(--code-bg);
+            color: var(--code-text);
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            direction: ltr;
+            text-align: left;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        code { font-family: 'Consolas', 'Monaco', monospace; }
+
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 5px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.3s;
+        }
+
+        .copy-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #fff;
+        }
+
+        .copy-btn.copied {
+            background: var(--success-color);
+            border-color: var(--success-color);
+        }
+
+        .note {
+            background: #fff9c4;
+            border-right: 5px solid #fbc02d;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div >
+    
+        <h2>دليل الخطوات البرمجية عبر PowerShell لإعداد نسخة عربية خفيفة تحتوى على وورد واكسل وباوربوينت فقط</h2>
+   
+
+    <div class="card">
+        <h2><span class="step-number">1</span> التحميل والتحضير</h2>
+        <p>قم بفتح <strong>PowerShell</strong> كمسؤول (Administrator) ثم نفذ الأمر التالي لإنشاء المجلد وتحميل الأداة:</p>
+        <div class="code-container">
+
+            <pre>New-Item -Path "C:\OfficeSetup" -ItemType Directory -Force; cd "C:\OfficeSetup"; Invoke-WebRequest -Uri "https://officecdn.microsoft.com/pr/wsus/setup.exe" -OutFile "setup.exe"; notepad.exe .\configuration-Office365-x64.xml</pre>
+        </div>
+        <div class="note"><strong>تنبيه:</strong>  نظرا لعدم وجود ملف بالاسم الموجود بالامر السابق سيظهر البرنامج مربع حوارى يطلب منك تكوين هذا الملف فإقبل ذلك.</div>
+    </div>
+
+    <div class="card">
+        <h2><span class="step-number">2</span> تخصيص ملف الإعدادات</h2>
+        <p>بعد فتح المفكرة (Notepad)، استبدل كل المحتوى بالكود التالي:</p>
+        <div class="code-container">
+ 
+            <pre>&lt;Configuration&gt;
+  &lt;Add OfficeClientEdition="64" Channel="SemiAnnual"&gt;
+    &lt;Product ID="O365ProPlusRetail"&gt;
+      &lt;Language ID="ar-sa" /&gt;
+      &lt;ExcludeApp ID="Access" /&gt;
+      &lt;ExcludeApp ID="Groove" /&gt;
+      &lt;ExcludeApp ID="Lync" /&gt;
+      &lt;ExcludeApp ID="OneDrive" /&gt;
+      &lt;ExcludeApp ID="OneNote" /&gt;
+      &lt;ExcludeApp ID="Outlook" /&gt;
+      &lt;ExcludeApp ID="Teams" /&gt;
+      &lt;ExcludeApp ID="Bing" /&gt;
+      &lt;ExcludeApp ID="OutlookForWindows" /&gt;
+      &lt;ExcludeApp ID="Publisher" /&gt;
+    &lt;/Product&gt;
+  &lt;/Add&gt;
+  &lt;Updates Enabled="TRUE" /&gt;
+  &lt;RemoveMSI /&gt;
+  &lt;Display Level="Full" AcceptEULA="TRUE" /&gt;
+&lt;/Configuration&gt;</pre>
+        </div>
+        <div class="note"><strong>تنبيه:</strong> لا تنسَ حفظ الملف (Ctrl + S) وإغلاق المفكرة قبل المتابعة.</div>
+    </div>
+
+    <div class="card">
+        <h2><span class="step-number">3</span> تنفيذ التثبيت</h2>
+        <p>عد الآن إلى نافذة PowerShell وأدخل الامر التالى واضغط Enter لتنفيذ أمر التثبيت النهائي:</p>
+        <div class="code-container">
+ 
+            <pre>.\setup.exe /configure .\configuration-Office365-x64.xml</pre>
+        </div>
+                <div class="note"><strong>تنبيه:</strong>  يأخذ التثبيت وقت يتناسب مع سرعة اتصالك بالانترنت فلا داعى للقلق ولكن اترك الامر الى ان ينتهى التثبيت تماما وتظهر لك اشعار بذلك.</div>
+    </div>
+    
+        <div class="card">
+        <h2><span class="step-number">4</span> تفعيل الاوفيس بطريقة امنه وفعالة ومجانية</h2>
+        <p>عد الآن إلى نافذة PowerShell وأدخل الامر التالى واضغط Enter لتفعيل أمر التفعيل النهائي:</p>
+        <div class="code-container">
+
+            <pre>irm https://get.activated.win | iex</pre>
+        </div>
+        <div class="note"><strong>تنبيه:</strong>   ستظهر لك واجهة برنامج التفعيل وهى صالحة لتفعيل الويندوز والاوفيس وبها اضافات اخرى وما يلزمك هنا هو اختيار Ohook للتفعيل الدائم للأوفيس مجانا.</div>
+    </div>
+    
+</div>
+
+ 
+
+</body>
+</html>
+            </div>
+    </div>
+
+    <div id="ohook" class="content-section">
+        <div class="card">
+            <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل تفعيل Office</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 1100px; margin: 0 auto; padding: 20px; background-color: #f4f7f6; }
+        h2, h3 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin-top: 30px; }
+        .code-block { background-color: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; direction: ltr; text-align: left; overflow-x: auto; font-family: 'Courier New', Courier, monospace; margin: 10px 0; font-size: 14px; }
+        
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background-color: white; font-size: 14px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .link-btn { color: #3498db; text-decoration: none; font-weight: bold; }
+        .link-btn:hover { text-decoration: underline; }
+        .note { background-color: #fff3cd; border-right: 5px solid #ffca28; padding: 15px; margin: 20px 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+<div class="card">
+        <h2>1- تفعيل الاوفيس آليا بطريقة امنه وفعالة ومجانية</h2>
+        <p>افتح كمدير نافذة PowerShell وأدخل الامر التالى واضغط Enter لتفعيل أمر التفعيل النهائي:</p>
+        <div class="code-block">
+        irm https://get.activated.win | iex
+        </div>
+        <div class="note"><strong>تنبيه:</strong>ستظهر لك واجهة برنامج التفعيل وهى صالحة لتفعيل الويندوز والاوفيس وبها اضافات اخرى وما يلزمك هنا هو اختيار Ohook للتفعيل الدائم للأوفيس مجانا.</div>
+        <div class="note"><strong>تنبيه:</strong>يمكنكم الاكتفاء بهذه الخطوة فقط للتفعيل اما طريقة التفعيل التالية فهى مناسبة للذين يريدون ممارسة التفعيل خطوة بخطوة بأنفسهم لفهم الطريقة.</div>
+    </div>
+
+    <h2>2- دليل تفعيل Office يدويًا (Ohook)</h2>
+    <p>المصدر: <a href="https://massgrave.dev/ohook">Manual Office Ohook Activation</a></p>
+ 
+<div class="card">
+    <h2>كيفية إنشاء ملفات sppc.dll من الصفر</h2>
+    <div class="note">
+    <strong>ملاحظة حول هذه الخطوة:</strong>يمكنكم تزيل هذه الملفات المطلوبة للتفعيل جاهزة والانتقال مباشرة  الى خطوات التفعيل وعدم اجراء هذه الخطوة اذا رغبتم فى ذلك.
+</div>
+    <ol>
+        <li>قم بتحميل الكود المصدري لـ <strong>ohook 0.5</strong> من الرابط التالي: 
+            <a href="https://github.com/asdcorp/ohook/archive/refs/tags/0.5.zip" class="link-btn">تحميل المصدر (Source Code)</a>.
+        </li>
+        <li>استخرج الملف في مجلد باسم <code>C:\ohook</code>.</li>
+        <li>قم بتحميل أدوات المترجم (Compiler) التالية واستخرجها في القرص <code>C:\</code> لتصبح المسارات <code>C:\mingw32</code> و <code>C:\mingw64</code>:
+            <ul>
+                <li><a href="https://github.com/brechtsanders/winlibs_mingw/releases/download/11.4.0-11.0.0-ucrt-r1/winlibs-i686-posix-dwarf-gcc-11.4.0-mingw-w64ucrt-11.0.0-r1.7z" class="link-btn">تحميل mingw32</a></li>
+                <li><a href="https://github.com/brechtsanders/winlibs_mingw/releases/download/11.4.0-11.0.0-ucrt-r1/winlibs-x86_64-posix-seh-gcc-11.4.0-mingw-w64ucrt-11.0.0-r1.7z" class="link-btn">تحميل mingw64</a></li>
+            </ul>
+        </li>
+        <li>افتح <strong>Powershell</strong> كمسؤول وقم بتشغيل الأوامر التالية لضبط التاريخ:</li>
+    </ol>
+    <div class="code-block">
+        Set-TimeZone -Id 'UTC'; $date=[datetime]'2023/8/7 12:00';while($true){set-date $date; start-sleep -milliseconds 10;}
+    </div>
+    <p>افتح نافذة Powershell أخرى وقم بالبناء:</p>
+    <div class="code-block">
+        Set-Location -Path C:\ohook<br>
+        C:\mingw64\bin\mingw32-make.exe
+    </div>
+</div>
+
+<div class="card">
+    <h2>خطوات التفعيل اليدوي</h2>
+    <p>هذه الخطوات لنسخة Office 16.0 (2016, 2019, 2021, O365).</p>
+    <p>يمكنك تحميل ملفات <strong>sppc.dll</strong> الجاهزة من هنا: 
+        <a href="https://github.com/asdcorp/ohook/releases/download/0.5/ohook_0.5.zip" class="link-btn">تحميل ملفات ohook الجاهزة</a>.
+    </p>
+    <p>1. افتح موجه الأوامر (CMD) كمسؤول وقم بإنشاء Symlink:</p>
+    <div class="code-block">
+        mklink "%ProgramFiles%\Microsoft Office\root\vfs\System\sppcs.dll" "%windir%\System32\sppc.dll"
+    </div>
+    <p>2. انسخ مكتبة الخطاف (sppc.dll) إلى مجلد الأوفيس:</p>
+    <div class="code-block">
+        cd /d C:\ohook<br>
+        copy /y sppc64.dll "%ProgramFiles%\Microsoft Office\root\vfs\System\sppc.dll"
+    </div>
+    <p>3. لإيقاف رسالة خطأ ترخيص O365، أضف السجل التالي:</p>
+    <div class="code-block">
+        reg add HKCU\Software\Microsoft\Office\16.0\Common\Licensing\Resiliency /v "TimeOfLastHeartbeatFailure" /t REG_SZ /d "2040-01-01T00:00:00Z" /f
+    </div>
+    <p>4. أدخل المفتاح المناسب باستخدام الأمر: <code>slmgr /ipk key</code>
+    <br>
+    استبدل كلمة key بالمفتاح المناسب وكمثال لقد ادخلت مفتاح تفعيل الاوفيس O365ProPlusRetail كما فى الامر التالى:</p>
+    <div class="code-block">slmgr /ipk H8DN8-Y2YP3-CR9JT-DHDR9-C7GP3
+     </div>
+     <div class="note">
+    <strong>ملاحظة حول O365:</strong> لن تعمل ميزات الخادم الخاصة مثل مساحة 1 تيرابايت في OneDrive. ومع ذلك، ستعمل جميع ميزات التطبيقات الأخرى بشكل طبيعي مع مساحة 5 جيجابايت المجانية.
+</div>
+</div>
+
+<div class="card">
+    <h2>قائمة مفاتيح المنتجات (Generic Keys)</h2>
+
+
+<h3>Office 365 (16.0)</h3>
+    <table>
+        <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
+        <tbody>
+<tr><td>O365BusinessRetail</td><td>Y9NF9-M2QWD-FF6RJ-QJW36-RRF2T</td><td>SubTest</td></tr>
+<tr><td>O365EduCloudRetail</td><td>W62NQ-267QR-RTF74-PF2MH-JQMTH</td><td>Subscription</td></tr>
+<tr><td>O365HomePremRetail</td><td>J2W28-TN9C8-26PWV-F7J4G-72XCB</td><td>Subscription1</td></tr>
+<tr><td>O365ProPlusRetail</td><td>H8DN8-Y2YP3-CR9JT-DHDR9-C7GP3</td><td>Subscription2</td></tr>
+<tr><td>O365SmallBusPremRetail</td><td>HN8JP-87TQJ-PBF3P-Y66KC-W2K9V</td><td>Subscription1</td></tr>
+</tbody>
+    </table>
+    </div>
+    <div class="card">
+<h3>Office 2024 (16.0)</h3>
+    <table>
+        <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
+        <tbody>
+<tr><td>Access2024Retail</td><td>P6NMW-JMTRC-R6MQ6-HH3F2-BTHKB</td><td>Retail</td></tr>
+<tr><td>Access2024Volume</td><td>CXNJT-98HPP-92HX7-MX6GY-2PVFR</td><td>MAK-AE</td></tr>
+<tr><td>Excel2024Retail</td><td>82CNJ-W82TW-BY23W-BVJ6W-W48GP</td><td>Retail</td></tr>
+<tr><td>Excel2024Volume</td><td>7Y287-9N2KC-8MRR3-BKY82-2DQRV</td><td>MAK-AE</td></tr>
+<tr><td>Home2024Retail</td><td>N69X7-73KPT-899FD-P8HQ4-QGTP4</td><td>Retail</td></tr>
+<tr><td>HomeBusiness2024Retail</td><td>PRKQM-YNPQR-77QT6-328D7-BD223</td><td>Retail</td></tr>
+<tr><td>Outlook2024Retail</td><td>2CFK4-N44KG-7XG89-CWDG6-P7P27</td><td>Retail</td></tr>
+<tr><td>Outlook2024Volume</td><td>NQPXP-WVB87-H3MMB-FYBW2-9QFPB</td><td>MAK-AE</td></tr>
+<tr><td>PowerPoint2024Retail</td><td>CT2KT-GTNWH-9HFGW-J2PWJ-XW7KJ</td><td>Retail</td></tr>
+<tr><td>PowerPoint2024Volume</td><td>RRXFN-JJ26R-RVWD2-V7WMP-27PWQ</td><td>MAK-AE</td></tr>
+<tr><td>ProjectPro2024Retail</td><td>GNJ6P-Y4RBM-C32WW-2VJKJ-MTHKK</td><td>Retail</td></tr>
+<tr><td>ProjectPro2024Volume</td><td>WNFMR-HK4R7-7FJVM-VQ3JC-76HF6</td><td>MAK-AE1</td></tr>
+<tr><td>ProjectStd2024Retail</td><td>C2PNM-2GQFC-CY3XR-WXCP4-GX3XM</td><td>Retail</td></tr>
+<tr><td>ProjectStd2024Volume</td><td>F2VNW-MW8TT-K622Q-4D96H-PWJ8X</td><td>MAK-AE</td></tr>
+<tr><td>ProPlus2024Retail</td><td>VWCNX-7FKBD-FHJYG-XBR4B-88KC6</td><td>Retail</td></tr>
+<tr><td>ProPlus2024Volume</td><td>4YV2J-VNG7W-YGTP3-443TK-TF8CP</td><td>MAK-AE1</td></tr>
+<tr><td>SkypeforBusiness2024Volume</td><td>XKRBW-KN2FF-G8CKY-HXVG6-FVY2V</td><td>MAK-AE</td></tr>
+<tr><td>Standard2024Volume</td><td>GVG6N-6WCHH-K2MVP-RQ78V-3J7GJ</td><td>MAK-AE1</td></tr>
+<tr><td>VisioPro2024Retail</td><td>HGRBX-N68QF-6DY8J-CGX4W-XW7KP</td><td>Retail</td></tr>
+<tr><td>VisioPro2024Volume</td><td>GBNHB-B2G3Q-G42YB-3MFC2-7CJCX</td><td>MAK-AE</td></tr>
+<tr><td>VisioStd2024Retail</td><td>VBXPJ-38NR3-C4DKF-C8RT7-RGHKQ</td><td>Retail</td></tr>
+<tr><td>VisioStd2024Volume</td><td>YNFTY-63K7P-FKHXK-28YYT-D32XB</td><td>MAK-AE</td></tr>
+<tr><td>Word2024Retail</td><td>XN33R-RP676-GMY2F-T3MH7-GCVKR</td><td>Retail</td></tr>
+<tr><td>Word2024Volume</td><td>WD8CQ-6KNQM-8W2CX-2RT63-KK3TP</td><td>MAK-AE</td></tr>
+</tbody>
+    </table>
+        </div>
+    <div class="card">
+<h3>Office 2021 (16.0)</h3>
+    <table>
+        <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
+        <tbody>
+<tr><td>Access2021Retail</td><td>P286B-N3XYP-36QRQ-29CMP-RVX9M</td><td>Retail</td></tr>
+<tr><td>Access2021Volume</td><td>JBH3N-P97FP-FRTJD-MGK2C-VFWG6</td><td>MAK-AE</td></tr>
+<tr><td>Excel2021Retail</td><td>V6QFB-7N7G9-PF7W9-M8FQM-MY8G9</td><td>Retail</td></tr>
+<tr><td>Excel2021Volume</td><td>WNYR4-KMR9H-KVC8W-7HJ8B-K79DQ</td><td>MAK-AE</td></tr>
+<tr><td>HomeBusiness2021Retail</td><td>JM99N-4MMD8-DQCGJ-VMYFY-R63YK</td><td>Subscription</td></tr>
+<tr><td>HomeStudent2021Retail</td><td>N3CWD-38XVH-KRX2Y-YRP74-6RBB2</td><td>Subscription</td></tr>
+<tr><td>OneNote2021Retail</td><td>NB2TQ-3Y79C-77C6M-QMY7H-7QY8P</td><td>Retail</td></tr>
+<tr><td>Outlook2021Retail</td><td>4NCWR-9V92Y-34VB2-RPTHR-YTGR7</td><td>Retail</td></tr>
+<tr><td>Outlook2021Volume</td><td>JQ9MJ-QYN6B-67PX9-GYFVY-QJ6TB</td><td>MAK-AE</td></tr>
+<tr><td>Personal2021Retail</td><td>RRRYB-DN749-GCPW4-9H6VK-HCHPT</td><td>Retail</td></tr>
+<tr><td>PowerPoint2021Retail</td><td>3KXXQ-PVN2C-8P7YY-HCV88-GVM96</td><td>Retail1</td></tr>
+<tr><td>PowerPoint2021Volume</td><td>39G2N-3BD9C-C4XCM-BD4QG-FVYDY</td><td>MAK-AE</td></tr>
+<tr><td>ProPlus2021Retail</td><td>8WXTP-MN628-KY44G-VJWCK-C7PCF</td><td>Retail</td></tr>
+<tr><td>ProPlus2021Volume</td><td>RNHJY-DTFXW-HW9F8-4982D-MD2CW</td><td>MAK-AE1</td></tr>
+<tr><td>ProPlusSPLA2021Volume</td><td>JRJNJ-33M7C-R73X3-P9XF7-R9F6M</td><td>MAK-AE</td></tr>
+<tr><td>Professional2021Retail</td><td>DJPHV-NCJV6-GWPT6-K26JX-C7PBG</td><td>Retail</td></tr>
+<tr><td>ProjectPro2021Retail</td><td>QKHNX-M9GGH-T3QMW-YPK4Q-QRWMV</td><td>Retail</td></tr>
+<tr><td>ProjectPro2021Volume</td><td>HVC34-CVNPG-RVCMT-X2JRF-CR7RK</td><td>MAK-AE1</td></tr>
+<tr><td>ProjectStd2021Retail</td><td>2B96V-X9NJY-WFBRC-Q8MP2-7CHRR</td><td>Retail</td></tr>
+<tr><td>ProjectStd2021Volume</td><td>3CNQX-T34TY-99RH4-C4YD2-KW6WH</td><td>MAK-AE</td></tr>
+<tr><td>Publisher2021Retail</td><td>CDNFG-77T8D-VKQJX-B7KT3-KK28V</td><td>Retail1</td></tr>
+<tr><td>Publisher2021Volume</td><td>2KXJH-3NHTW-RDBPX-QFRXJ-MTGXF</td><td>MAK-AE</td></tr>
+<tr><td>SkypeforBusiness2021Retail</td><td>DVBXN-HFT43-CVPRQ-J89TF-VMMHG</td><td>Retail</td></tr>
+<tr><td>SkypeforBusiness2021Volume</td><td>R3FCY-NHGC7-CBPVP-8Q934-YTGXG</td><td>MAK-AE</td></tr>
+<tr><td>Standard2021Retail</td><td>HXNXB-J4JGM-TCF44-2X2CV-FJVVH</td><td>Retail</td></tr>
+<tr><td>Standard2021Volume</td><td>2CJN4-C9XK2-HFPQ6-YH498-82TXH</td><td>MAK-AE</td></tr>
+<tr><td>StandardSPLA2021Volume</td><td>BQWDW-NJ9YF-P7Y79-H6DCT-MKQ9C</td><td>MAK-AE</td></tr>
+<tr><td>VisioPro2021Retail</td><td>T6P26-NJVBR-76BK8-WBCDY-TX3BC</td><td>Retail</td></tr>
+<tr><td>VisioPro2021Volume</td><td>JNKBX-MH9P4-K8YYV-8CG2Y-VQ2C8</td><td>MAK-AE</td></tr>
+<tr><td>VisioStd2021Retail</td><td>89NYY-KB93R-7X22F-93QDF-DJ6YM</td><td>Retail</td></tr>
+<tr><td>VisioStd2021Volume</td><td>BW43B-4PNFP-V637F-23TR2-J47TX</td><td>MAK-AE</td></tr>
+<tr><td>Word2021Retail</td><td>VNCC4-CJQVK-BKX34-77Y8H-CYXMR</td><td>Retail</td></tr>
+<tr><td>Word2021Volume</td><td>BJG97-NW3GM-8QQQ7-FH76G-686XM</td><td>MAK-AE</td></tr>
+</tbody>
+    </table>
+        </div>
+    <div class="card">
+<h3>Office 2019 (16.0)</h3>
+    <table>
+        <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
+        <tbody>
+<tr><td>Access2019Retail</td><td>WRYJ6-G3NP7-7VH94-8X7KP-JB7HC</td><td>Retail</td></tr>
+<tr><td>Access2019Volume</td><td>6FWHX-NKYXK-BW34Q-7XC9F-Q9PX7</td><td>MAK-AE</td></tr>
+<tr><td>AccessRuntime2019Retail</td><td>FGQNJ-JWJCG-7Q8MG-RMRGJ-9TQVF</td><td>PrepidBypass</td></tr>
+<tr><td>Excel2019Retail</td><td>KBPNW-64CMM-8KWCB-23F44-8B7HM</td><td>Retail</td></tr>
+<tr><td>Excel2019Volume</td><td>8NT4X-GQMCK-62X4P-TW6QP-YKPYF</td><td>MAK-AE</td></tr>
+<tr><td>HomeBusiness2019Retail</td><td>QBN2Y-9B284-9KW78-K48PB-R62YT</td><td>Retail</td></tr>
+<tr><td>HomeStudent2019Retail</td><td>XNWPM-32XQC-Y7QJC-QGGBV-YY7JK</td><td>Retail</td></tr>
+<tr><td>Outlook2019Retail</td><td>WR43D-NMWQQ-HCQR2-VKXDR-37B7H</td><td>Retail</td></tr>
+<tr><td>Outlook2019Volume</td><td>RN3QB-GT6D7-YB3VH-F3RPB-3GQYB</td><td>MAK-AE</td></tr>
+<tr><td>Personal2019Retail</td><td>NMBY8-V3CV7-BX6K6-2922Y-43M7T</td><td>Retail</td></tr>
+<tr><td>PowerPoint2019Retail</td><td>HN27K-JHJ8R-7T7KK-WJYC3-FM7MM</td><td>Retail</td></tr>
+<tr><td>PowerPoint2019Volume</td><td>29GNM-VM33V-WR23K-HG2DT-KTQYR</td><td>MAK-AE</td></tr>
+<tr><td>ProPlus2019Retail</td><td>BN4XJ-R9DYY-96W48-YK8DM-MY7PY</td><td>Retail</td></tr>
+<tr><td>ProPlus2019Volume</td><td>T8YBN-4YV3X-KK24Q-QXBD7-T3C63</td><td>MAK-AE</td></tr>
+<tr><td>Professional2019Retail</td><td>9NXDK-MRY98-2VJV8-GF73J-TQ9FK</td><td>Retail</td></tr>
+<tr><td>ProjectPro2019Retail</td><td>JDTNC-PP77T-T9H2W-G4J2J-VH8JK</td><td>Retail</td></tr>
+<tr><td>ProjectPro2019Volume</td><td>TBXBD-FNWKJ-WRHBD-KBPHH-XD9F2</td><td>MAK-AE</td></tr>
+<tr><td>ProjectStd2019Retail</td><td>R3JNT-8PBDP-MTWCK-VD2V8-HMKF9</td><td>Retail</td></tr>
+<tr><td>ProjectStd2019Volume</td><td>RBRFX-MQNDJ-4XFHF-7QVDR-JHXGC</td><td>MAK-AE</td></tr>
+<tr><td>Publisher2019Retail</td><td>4QC36-NW3YH-D2Y9D-RJPC7-VVB9D</td><td>Retail</td></tr>
+<tr><td>Publisher2019Volume</td><td>K8F2D-NBM32-BF26V-YCKFJ-29Y9W</td><td>MAK-AE</td></tr>
+<tr><td>SkypeforBusiness2019Retail</td><td>JBDKF-6NCD6-49K3G-2TV79-BKP73</td><td>Retail</td></tr>
+<tr><td>SkypeforBusiness2019Volume</td><td>9MNQ7-YPQ3B-6WJXM-G83T3-CBBDK</td><td>MAK-AE</td></tr>
+<tr><td>SkypeforBusinessEntry2019Retail</td><td>N9722-BV9H6-WTJTT-FPB93-978MK</td><td>PrepidBypass</td></tr>
+<tr><td>Standard2019Retail</td><td>NDGVM-MD27H-2XHVC-KDDX2-YKP74</td><td>Retail</td></tr>
+<tr><td>Standard2019Volume</td><td>NT3V6-XMBK7-Q66MF-VMKR4-FC33M</td><td>MAK-AE</td></tr>
+<tr><td>VisioPro2019Retail</td><td>2NWVW-QGF4T-9CPMB-WYDQ9-7XP79</td><td>Retail</td></tr>
+<tr><td>VisioPro2019Volume</td><td>33YF4-GNCQ3-J6GDM-J67P3-FM7QP</td><td>MAK-AE</td></tr>
+<tr><td>VisioStd2019Retail</td><td>263WK-3N797-7R437-28BKG-3V8M8</td><td>Retail</td></tr>
+<tr><td>VisioStd2019Volume</td><td>BGNHX-QTPRJ-F9C9G-R8QQG-8T27F</td><td>MAK-AE</td></tr>
+<tr><td>Word2019Retail</td><td>JXR8H-NJ3MK-X66W8-78CWD-QRVR2</td><td>Retail</td></tr>
+<tr><td>Word2019Volume</td><td>9F36R-PNVHH-3DXGQ-7CD2H-R9D3V</td><td>MAK-AE</td></tr>
+</tbody>
+    </table>
+        </div>
+    <div class="card">
+<h3>Office 2016 (16.0)</h3>
+    <table>
+        <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
+        <tbody>
+<tr><td>AccessRetail</td><td>WHK4N-YQGHB-XWXCC-G3HYC-6JF94</td><td>Retail</td></tr>
+<tr><td>AccessRuntimeRetail</td><td>RNB7V-P48F4-3FYY6-2P3R3-63BQV</td><td>PrepidBypass</td></tr>
+<tr><td>AccessVolume</td><td>JJ2Y4-N8KM3-Y8KY3-Y22FR-R3KVK</td><td>MAK</td></tr>
+<tr><td>ExcelRetail</td><td>RKJBN-VWTM2-BDKXX-RKQFD-JTYQ2</td><td>Retail</td></tr>
+<tr><td>ExcelVolume</td><td>FVGNR-X82B2-6PRJM-YT4W7-8HV36</td><td>MAK</td></tr>
+<tr><td>HomeBusinessPipcRetail</td><td>2WQNF-GBK4B-XVG6F-BBMX7-M4F2Y</td><td>OEM-Perp</td></tr>
+<tr><td>HomeBusinessRetail</td><td>HM6FM-NVF78-KV9PM-F36B8-D9MXD</td><td>Retail</td></tr>
+<tr><td>HomeStudentRetail</td><td>PNPRV-F2627-Q8JVC-3DGR9-WTYRK</td><td>Retail</td></tr>
+<tr><td>HomeStudentVNextRetail</td><td>YWD4R-CNKVT-VG8VJ-9333B-RC3B8</td><td>Retail</td></tr>
+<tr><td>MondoRetail</td><td>VNWHF-FKFBW-Q2RGD-HYHWF-R3HH2</td><td>Subscription</td></tr>
+<tr><td>MondoVolume</td><td>FMTQQ-84NR8-2744R-MXF4P-PGYR3</td><td>MAK</td></tr>
+<tr><td>OneNoteFreeRetail</td><td>XYNTG-R96FY-369HX-YFPHY-F9CPM</td><td>Bypass</td></tr>
+<tr><td>OneNoteRetail</td><td>FXF6F-CNC26-W643C-K6KB7-6XXW3</td><td>Retail</td></tr>
+<tr><td>OneNoteVolume</td><td>9TYVN-D76HK-BVMWT-Y7G88-9TPPV</td><td>MAK</td></tr>
+<tr><td>OutlookRetail</td><td>7N4KG-P2QDH-86V9C-DJFVF-369W9</td><td>Retail</td></tr>
+<tr><td>OutlookVolume</td><td>7QPNR-3HFDG-YP6T9-JQCKQ-KKXXC</td><td>MAK</td></tr>
+<tr><td>PersonalPipcRetail</td><td>9CYB3-NFMRW-YFDG6-XC7TF-BY36J</td><td>OEM-Perp</td></tr>
+<tr><td>PersonalRetail</td><td>FT7VF-XBN92-HPDJV-RHMBY-6VKBF</td><td>Retail</td></tr>
+<tr><td>PowerPointRetail</td><td>N7GCB-WQT7K-QRHWG-TTPYD-7T9XF</td><td>Retail</td></tr>
+<tr><td>PowerPointVolume</td><td>X3RT9-NDG64-VMK2M-KQ6XY-DPFGV</td><td>MAK</td></tr>
+<tr><td>ProPlusRetail</td><td>GM43N-F742Q-6JDDK-M622J-J8GDV</td><td>Retail</td></tr>
+<tr><td>ProPlusVolume</td><td>FNVK8-8DVCJ-F7X3J-KGVQB-RC2QY</td><td>MAK</td></tr>
+<tr><td>ProfessionalPipcRetail</td><td>CF9DD-6CNW2-BJWJQ-CVCFX-Y7TXD</td><td>OEM-Perp</td></tr>
+<tr><td>ProfessionalRetail</td><td>NXFTK-YD9Y7-X9MMJ-9BWM6-J2QVH</td><td>Retail</td></tr>
+<tr><td>ProjectProRetail</td><td>WPY8N-PDPY4-FC7TF-KMP7P-KWYFY</td><td>Subscription</td></tr>
+<tr><td>ProjectProVolume</td><td>PKC3N-8F99H-28MVY-J4RYY-CWGDH</td><td>MAK</td></tr>
+<tr><td>ProjectProXVolume</td><td>JBNPH-YF2F7-Q9Y29-86CTG-C9YGV</td><td>MAKC2R</td></tr>
+<tr><td>ProjectStdRetail</td><td>NTHQT-VKK6W-BRB87-HV346-Y96W8</td><td>Subscription</td></tr>
+<tr><td>ProjectStdVolume</td><td>4TGWV-6N9P6-G2H8Y-2HWKB-B4G93</td><td>MAK</td></tr>
+<tr><td>ProjectStdXVolume</td><td>N3W2Q-69MBT-27RD9-BH8V3-JT2C8</td><td>MAKC2R</td></tr>
+<tr><td>PublisherRetail</td><td>WKWND-X6G9G-CDMTV-CPGYJ-6MVBF</td><td>Retail</td></tr>
+<tr><td>PublisherVolume</td><td>9QVN2-PXXRX-8V4W8-Q7926-TJGD8</td><td>MAK</td></tr>
+<tr><td>SkypeServiceBypassRetail</td><td>6MDN4-WF3FV-4WH3Q-W699V-RGCMY</td><td>PrepidBypass</td></tr>
+<tr><td>SkypeforBusinessEntryRetail</td><td>4N4D8-3J7Y3-YYW7C-73HD2-V8RHY</td><td>PrepidBypass</td></tr>
+<tr><td>SkypeforBusinessRetail</td><td>PBJ79-77NY4-VRGFG-Y8WYC-CKCRC</td><td>Retail</td></tr>
+<tr><td>SkypeforBusinessVolume</td><td>DMTCJ-KNRKR-JV8TQ-V2CR2-VFTFH</td><td>MAK</td></tr>
+<tr><td>StandardRetail</td><td>2FPWN-4H6CM-KD8QQ-8HCHC-P9XYW</td><td>Retail</td></tr>
+<tr><td>StandardVolume</td><td>WHGMQ-JNMGT-MDQVF-WDR69-KQBWC</td><td>MAK</td></tr>
+<tr><td>VisioProRetail</td><td>NVK2G-2MY4G-7JX2P-7D6F2-VFQBR</td><td>Subscription</td></tr>
+<tr><td>VisioProVolume</td><td>NRKT9-C8GP2-XDYXQ-YW72K-MG92B</td><td>MAK</td></tr>
+<tr><td>VisioProXVolume</td><td>G98Q2-B6N77-CFH9J-K824G-XQCC4</td><td>MAKC2R</td></tr>
+<tr><td>VisioStdRetail</td><td>NCRB7-VP48F-43FYY-62P3R-367WK</td><td>Subscription</td></tr>
+<tr><td>VisioStdVolume</td><td>XNCJB-YY883-JRW64-DPXMX-JXCR6</td><td>MAK</td></tr>
+<tr><td>VisioStdXVolume</td><td>B2HTN-JPH8C-J6Y6V-HCHKB-43MGT</td><td>MAKC2R</td></tr>
+<tr><td>WordRetail</td><td>P8K82-NQ7GG-JKY8T-6VHVY-88GGD</td><td>Retail</td></tr>
+<tr><td>WordVolume</td><td>YHMWC-YN6V9-WJPXD-3WQKP-TMVCV</td><td>MAK</td></tr>
+</tbody>
+    </table>
+        </div>
+    <div class="card">
+<h3>Office 365 (15.0)</h3>
+    <table>
+        <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
+        <tbody>
+<tr><td>O365BusinessRetail</td><td>Y9NF9-M2QWD-FF6RJ-QJW36-RRF2T</td><td>SubTest</td></tr>
+<tr><td>O365HomePremRetail</td><td>J2W28-TN9C8-26PWV-F7J4G-72XCB</td><td>Subscription1</td></tr>
+<tr><td>O365ProPlusRetail</td><td>H8DN8-Y2YP3-CR9JT-DHDR9-C7GP3</td><td>Subscription2</td></tr>
+<tr><td>O365SmallBusPremRetail</td><td>HN8JP-87TQJ-PBF3P-Y66KC-W2K9V</td><td>Subscription1</td></tr>
+</tbody>
+    </table>
+        </div>
+    <div class="card">
+<h3>Office 2013 (15.0)</h3>
+    <table>
+        <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
+        <tbody>
+<tr><td>AccessRetail</td><td>B7RFY-7NXPK-Q4342-Y9X2H-3JX4X</td><td>Retail</td></tr>
+<tr><td>AccessVolume</td><td>9MF9G-CN32B-HV7XT-9XJ8T-9KVF4</td><td>MAK</td></tr>
+<tr><td>ExcelRetail</td><td>NT889-MBH4X-8MD4H-X8R2D-WQHF8</td><td>Retail</td></tr>
+<tr><td>ExcelVolume</td><td>Y3N36-YCHDK-XYWBG-KYQVV-BDTJ2</td><td>MAK</td></tr>
+<tr><td>GrooveRetail</td><td>BMK4W-6N88B-BP9QR-PHFCK-MG7GF</td><td>Retail</td></tr>
+<tr><td>GrooveVolume</td><td>RN84D-7HCWY-FTCBK-JMXWM-HT7GJ</td><td>MAK</td></tr>
+<tr><td>HomeBusinessPipcRetail</td><td>2WQNF-GBK4B-XVG6F-BBMX7-M4F2Y</td><td>OEM-Perp</td></tr>
+<tr><td>HomeBusinessRetail</td><td>YWD4R-CNKVT-VG8VJ-9333B-RCW9F</td><td>Subscription</td></tr>
+<tr><td>HomeStudentRetail</td><td>6WW3N-BDGM9-PCCHD-9QPP9-P34QG</td><td>Subscription</td></tr>
+<tr><td>InfoPathRetail</td><td>RV7NQ-HY3WW-7CKWH-QTVMW-29VHC</td><td>Retail</td></tr>
+<tr><td>InfoPathVolume</td><td>C4TGN-QQW6Y-FYKXC-6WJW7-X73VG</td><td>MAK</td></tr>
+<tr><td>LyncAcademicRetail</td><td>6MDN4-WF3FV-4WH3Q-W699V-RGCMY</td><td>PrepidBypass</td></tr>
+<tr><td>LyncEntryRetail</td><td>N42BF-CBY9F-W2C7R-X397X-DYFQW</td><td>PrepidBypass</td></tr>
+<tr><td>LyncRetail</td><td>89P23-2NK2R-JXM2M-3Q8R8-BWM3Y</td><td>Retail</td></tr>
+<tr><td>LyncVolume</td><td>3WKCD-RN489-4M7XJ-GJ2GQ-YBFQ6</td><td>MAK</td></tr>
+<tr><td>MondoRetail</td><td>VNWHF-FKFBW-Q2RGD-HYHWF-R3HH2</td><td>Subscription</td></tr>
+<tr><td>MondoVolume</td><td>2YNYQ-FQMVG-CB8KW-6XKYD-M7RRJ</td><td>MAK</td></tr>
+<tr><td>OneNoteFreeRetail</td><td>4TGWV-6N9P6-G2H8Y-2HWKB-B4FF4</td><td>Bypass</td></tr>
+<tr><td>OneNoteRetail</td><td>3KXXQ-PVN2C-8P7YY-HCV88-GVGQ6</td><td>Retail</td></tr>
+<tr><td>OneNoteVolume</td><td>JDMWF-NJC7B-HRCHY-WFT8G-BPXD9</td><td>MAK</td></tr>
+<tr><td>OutlookRetail</td><td>9N4RQ-CF8R2-HBVCB-J3C9V-94P4D</td><td>Retail</td></tr>
+<tr><td>OutlookVolume</td><td>HNG29-GGWRG-RFC8C-JTFP4-2J9FH</td><td>MAK</td></tr>
+<tr><td>PersonalPipcRetail</td><td>9CYB3-NFMRW-YFDG6-XC7TF-BY36J</td><td>OEM-Perp</td></tr>
+<tr><td>PersonalRetail</td><td>2NCQJ-MFRMH-TXV83-J7V4C-RVRWC</td><td>Retail</td></tr>
+<tr><td>PowerPointRetail</td><td>HVMN2-KPHQH-DVQMK-7B3CM-FGBFC</td><td>Retail</td></tr>
+<tr><td>PowerPointVolume</td><td>47DKN-HPJP7-RF9M3-VCYT2-TMQ4G</td><td>MAK</td></tr>
+<tr><td>ProPlusRetail</td><td>N3QMM-GKDT3-JQGX6-7X3MQ-4GBG3</td><td>Retail</td></tr>
+<tr><td>ProPlusVolume</td><td>QKHNX-M9GGH-T3QMW-YPK4Q-QRP9V</td><td>MAK</td></tr>
+<tr><td>ProfessionalPipcRetail</td><td>CF9DD-6CNW2-BJWJQ-CVCFX-Y7TXD</td><td>OEM-Perp</td></tr>
+<tr><td>ProfessionalRetail</td><td>MBQBN-CQPT6-PXRMC-TYJFR-3C8MY</td><td>Retail</td></tr>
+<tr><td>ProjectProRetail</td><td>WPY8N-PDPY4-FC7TF-KMP7P-KWYFY</td><td>Subscription</td></tr>
+<tr><td>ProjectProVolume</td><td>WFCT2-NBFQ7-JD7VV-MFJX6-6F2CM</td><td>MAK</td></tr>
+<tr><td>ProjectStdRetail</td><td>NTHQT-VKK6W-BRB87-HV346-Y96W8</td><td>Subscription</td></tr>
+<tr><td>ProjectStdVolume</td><td>3CNQX-T34TY-99RH4-C4YD2-KWYGV</td><td>MAK</td></tr>
+<tr><td>PublisherRetail</td><td>TWNCJ-YR84W-X7PPF-6DPRP-D67VC</td><td>Retail</td></tr>
+<tr><td>PublisherVolume</td><td>DJPHV-NCJV6-GWPT6-K26JX-C7GX6</td><td>MAK</td></tr>
+<tr><td>SPDRetail</td><td>3NY6J-WHT3F-47BDV-JHF36-2343W</td><td>PrepidBypass</td></tr>
+<tr><td>StandardRetail</td><td>V6VWN-KC2HR-YYDD6-9V7HQ-7T7VP</td><td>Retail</td></tr>
+<tr><td>StandardVolume</td><td>9TN6B-PCYH4-MCVDQ-KT83C-TMQ7T</td><td>MAK</td></tr>
+<tr><td>VisioProRetail</td><td>NVK2G-2MY4G-7JX2P-7D6F2-VFQBR</td><td>Subscription</td></tr>
+<tr><td>VisioProVolume</td><td>YN7CF-XRH6R-CGKRY-GKPV3-BG7WF</td><td>MAK</td></tr>
+<tr><td>VisioStdRetail</td><td>NCRB7-VP48F-43FYY-62P3R-367WK</td><td>Subscription</td></tr>
+<tr><td>VisioStdVolume</td><td>RX63Y-4NFK2-XTYC8-C6B3W-YPXPJ</td><td>MAK</td></tr>
+<tr><td>WordRetail</td><td>NB77V-RPFQ6-PMMKQ-T87DV-M4D84</td><td>Retail</td></tr>
+<tr><td>WordVolume</td><td>RPHPB-Y7NC4-3VYFM-DW7VD-G8YJ8</td><td>MAK</td></tr>
+</tbody>
+    </table>
+        </div>
+
+
+
+
+<div class="card" style="border: 1px solid #e74c3c;">
+    <h2 style="color: #e74c3c;">إزالة تفعيل Ohook</h2>
+    <p>لحذف تفعيل Ohook قم بفتح موجه الاوامر (CMD) كمدير ثم نفذ الاوامر التاليه:</p>
+    <div class="code-block">
+       reg delete HKCU\Software\Microsoft\Office\16.0\Common\Licensing\Resiliency<br>
+        del "C:\Program Files\Microsoft Office\root\vfs\System\sppc.dll"<br>
+        del "C:\Program Files\Microsoft Office\root\vfs\System\sppcs.dll"
+    </div>
+</div>
+
+</body>
+</html>
+            </div>
+    </div>
+<div id="ods" class="content-section">
+        <div class="card">
+            <h2 style="color: #2c3e50;">الحصول على 25 بريد الكترونى للتفعيل المجانى</h2>
+
+
+    <style>
+        .link-action { display: inline-block; padding: 0px 10px; color: #a43b8d; text-decoration: none; border: 1px solid #a43b8d; border-radius: 5px; font-weight: 600; transition: 0.2s; background: #fff; }
+        .link-action:hover { background: #a43b8d; color: #fff; }
+        .na-val { color: #ccc; font-style: italic; font-size: 12px; }
+    </style>
+</head>
+<body><b>يمكن لكم إعداد اشتراك مطور الاوفيس للحصول مجانا على اشتراك Microsoft 365 E5 لاستخدامه بشكل طبيعى او استخدامه في التطوير ويتيح هذا الاشتراك  25 بريد الكترونى مجانى يستخدم لتفعيل الاوفيس حيث ان كل واحد منهم يمكنه تفعيل الاوفيس على عشرة اجهزة فى وقت واحد بالاضافة الى المزيد من الخدمات السحابية حيث ان لكل بريد الكترونى منهم مساحة واحد تيرا بايت مجانا وللاشتراك اضغط على الرابط التالى واتبع التعليمات:</b><p>
+<a class="link-action" href="https://developer.microsoft.com/en-us/microsoft-365/dev-program" target="_blank">Join the Microsoft 365 Developer Program</a></p>
+</body>
+</html>
+            </div>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            // إخفاء جميع الأقسام
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(sec => sec.classList.remove('active'));
+
+            // إزالة حالة النشاط من جميع الأزرار
+            const buttons = document.querySelectorAll('.navbar button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // إظهار القسم المطلوب
+            document.getElementById(sectionId).classList.add('active');
+
+            // تفعيل الزر المناسب
+            document.getElementById('btn-' + sectionId).classList.add('active');
+
+            // العودة لأعلى الصفحة عند التبديل
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+
+</body>
+</html>

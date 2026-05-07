@@ -727,8 +727,14 @@
         h2, h3 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin-top: 30px; }
         .code-block { background-color: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; direction: ltr; text-align: left; overflow-x: auto; font-family: 'Courier New', Courier, monospace; margin: 10px 0; font-size: 14px; }
         
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; background-color: white; font-size: 14px; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* يسمح بالتمرير الأفقي داخل الحاوية فقط */
+    -webkit-overflow-scrolling: touch; /* تمرير ناعم على أجهزة iOS */
+    margin-bottom: 20px;
+}
+        table { min-width: 600px; width: 100%; border-collapse: collapse; margin: 20px 0; background-color: white; font-size: 14px; }
+        th, td { white-space: nowrap; border: 1px solid #ddd; padding: 10px; text-align: center; }
         th { background-color: #3498db; color: white; }
         tr:nth-child(even) { background-color: #f9f9f9; }
         .link-btn { color: #3498db; text-decoration: none; font-weight: bold; }
@@ -807,11 +813,12 @@
 </div>
 </div>
 
-<div class="card">
+<div class="table-container">
     <h2>قائمة مفاتيح المنتجات (Generic Keys)</h2>
 
 
 <h3>Office 365 (16.0)</h3>
+
     <table>
         <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
         <tbody>
@@ -823,7 +830,7 @@
 </tbody>
     </table>
     </div>
-    <div class="card">
+<div class="table-container">
 <h3>Office 2024 (16.0)</h3>
     <table>
         <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
@@ -855,7 +862,7 @@
 </tbody>
     </table>
         </div>
-    <div class="card">
+<div class="table-container">
 <h3>Office 2021 (16.0)</h3>
     <table>
         <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
@@ -896,7 +903,7 @@
 </tbody>
     </table>
         </div>
-    <div class="card">
+<div class="table-container">
 <h3>Office 2019 (16.0)</h3>
     <table>
         <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
@@ -936,7 +943,7 @@
 </tbody>
     </table>
         </div>
-    <div class="card">
+<div class="table-container">
 <h3>Office 2016 (16.0)</h3>
     <table>
         <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
@@ -990,7 +997,7 @@
 </tbody>
     </table>
         </div>
-    <div class="card">
+<div class="table-container">
 <h3>Office 365 (15.0)</h3>
     <table>
         <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
@@ -1002,7 +1009,7 @@
 </tbody>
     </table>
         </div>
-    <div class="card">
+<div class="table-container">
 <h3>Office 2013 (15.0)</h3>
     <table>
         <thead><tr><th>المنتج</th><th>المفتاح</th><th>النوع</th></tr></thead>
